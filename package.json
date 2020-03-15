@@ -8,16 +8,21 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "pod": "cd ios; pod install; cd .."
+    "pod": "cd ios; pod install; cd ..",
+    "svgr": "svgr ./src/assets/icons -d ./src/components/icons --native --svg-props 'className=' --svgo-config .svgorc.json"
   },
   "dependencies": {
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-svg": "^12.0.3",
+    "styled-components": "^5.0.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
+    "@svgr/cli": "^5.2.0",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
