@@ -1,5 +1,5 @@
 {
-  "name": "ReactNativeStarter",
+  "name": "react-native-starter",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "pod": "cd ios; pod install; cd .."
   },
   "dependencies": {
     "react": "16.9.0",
