@@ -1,3 +1,3 @@
 export default {
-  name: 'React Nativer Starter',
+  name: 'React Native Starter',
 }

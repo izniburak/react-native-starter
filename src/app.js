@@ -4,6 +4,9 @@ import { StatusBar } from 'react-native'
 import { ThemeProvider } from 'styled-components'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
+// Context
+import { Provider, initialState, getReducer } from './contexts/app'
+
 // Navigation Routes
 import Routes from './routes'
 
@@ -14,11 +17,13 @@ StatusBar.setBarStyle('dark-content')
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <SafeAreaProvider>
-        <Routes />
-      </SafeAreaProvider>
-    </ThemeProvider>
+    <Provider initialState={initialState} reducer={getReducer}>
+      <ThemeProvider theme={theme}>
+        <SafeAreaProvider>
+          <Routes />
+        </SafeAreaProvider>
+      </ThemeProvider>
+    </Provider>
   )
 }
 

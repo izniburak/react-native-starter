@@ -11,6 +11,7 @@ import AboutScreen from './screens/AboutScreen'
 const Tab = createBottomTabNavigator()
 const Stack = createStackNavigator()
 
+// Home Screens Stack
 function HomeScreens() {
   return (
     <Stack.Navigator>
@@ -27,6 +28,7 @@ function HomeScreens() {
   )
 }
 
+// Main Routes
 function Routes() {
   return (
     <NavigationContainer>
