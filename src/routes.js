@@ -19,8 +19,7 @@ function HomeScreens() {
         name="Home"
         component={HomeScreen}
         options={{
-          headerMode: 'none',
-          header: () => {},
+          headerShown: false,
         }}
       />
       <Stack.Screen name="Content" component={ContentScreen} />
