@@ -15,21 +15,21 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "pod": "cd ios; pod install; cd ..",
+    "pod": "pod install --project-directory=ios/",
     "svgr": "svgr ./src/assets/icons -d ./src/components/icons --native --svg-props 'className=' --svgo-config .svgorc.json"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.7",
     "@react-navigation/bottom-tabs": "^5.2.0",
-    "@react-navigation/native": "^5.0.10",
+    "@react-navigation/native": "^5.1.0",
     "@react-navigation/stack": "^5.2.0",
-    "react": "16.9.0",
-    "react-native": "0.61.5",
+    "react": "16.11.0",
+    "react-native": "0.62.0",
     "react-native-gesture-handler": "^1.6.0",
     "react-native-reanimated": "^1.7.0",
     "react-native-safe-area-context": "^0.7.3",
     "react-native-safe-area-view": "^1.0.0",
-    "react-native-screens": "^2.3.0",
+    "react-native-screens": "^2.4.0",
     "react-native-svg": "^12.0.3",
     "styled-components": "^5.0.1",
     "styled-system": "^5.1.5"
@@ -39,12 +39,12 @@
     "@babel/plugin-proposal-optional-chaining": "^7.9.0",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
-    "@svgr/cli": "^5.2.0",
+    "@svgr/cli": "^5.3.0",
     "babel-jest": "^24.9.0",
     "eslint": "^6.5.1",
     "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.9.0"
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
   },
   "jest": {
     "preset": "react-native"
