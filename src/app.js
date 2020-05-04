@@ -7,20 +7,21 @@ import { SafeAreaProvider } from 'react-native-safe-area-context'
 // Context
 import { Provider, initialState, getReducer } from './contexts/app'
 
-// Navigation Routes
-import Routes from './routes'
+// Navigator
+import Navigator from './navigator'
 
 // Theme
 import theme from './themes/default'
 
 StatusBar.setBarStyle('dark-content')
 
+// ¯\_(ツ)_/¯
 function App() {
   return (
     <Provider initialState={initialState} reducer={getReducer}>
       <ThemeProvider theme={theme}>
         <SafeAreaProvider>
-          <Routes />
+          <Navigator />
         </SafeAreaProvider>
       </ThemeProvider>
     </Provider>

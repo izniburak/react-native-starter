@@ -27,8 +27,8 @@ function HomeScreens() {
   )
 }
 
-// Main Routes
-function Routes() {
+// Main Navigator
+function Navigator() {
   return (
     <NavigationContainer>
       <Tab.Navigator initialRouteName="Home">
@@ -39,4 +39,4 @@ function Routes() {
   )
 }
 
-export default Routes
+export default Navigator
