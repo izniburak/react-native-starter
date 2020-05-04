@@ -84,7 +84,7 @@ src/
 └── utils
 |   └── compose.js
 ├── app.js
-├── routes.js
+├── navigator.js
 ```
 
 İmkanım oldukça faydalı olabilecek componentler ve helperlar ekleyeceğim. Zaten aktif olarak kendim de kullanacağım için (Starter Kit olarak) sürekli güncel tutmam gerekecek. Sizlerinde önerisi, yanlış olduğunu düşündüğünüz şeyler vs varsa bana iletirseniz çok sevinirim.
